@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-hibernate-impl/pom.xml" />
       </list>
     </option>
   </component>

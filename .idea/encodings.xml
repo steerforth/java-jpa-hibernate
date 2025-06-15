@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/hibernate/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hibernate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-hibernate-impl/src/main/java" charset="UTF-8" />
   </component>
 </project>

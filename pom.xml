@@ -17,6 +17,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hibernate</module>
+        <module>jpa-hibernate-impl</module>
     </modules>
 
     <properties>
@@ -25,6 +26,8 @@
         <spring-boot.version>3.5.0</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
+        <sl4j.api>2.0.17</sl4j.api>
+        <sl4j.logback>1.5.18</sl4j.logback>
     </properties>
 
     <dependencyManagement>
@@ -46,19 +49,19 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>2.0.17</version>
+                <version>${sl4j.api}</version>
             </dependency>
             <!-- 添加logback-classic依赖 -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.5.18</version>
+                <version>${sl4j.logback}</version>
             </dependency>
             <!-- 添加logback-core依赖 -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
-                <version>1.5.18</version>
+                <version>${sl4j.logback}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

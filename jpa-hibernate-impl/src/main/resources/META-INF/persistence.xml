@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <!-- 持久化单元 -->
+    <persistence-unit name="MyJpa" transaction-type="RESOURCE_LOCAL">
+        <!-- 底层实现框架  这里选择是hibernate,可替换为其他的 -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.steer.jpahibernateimpl.pojo.Customer</class>
+        <!-- 数据库配置 -->
+        <properties>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <!-- 三个/表示localhost+端口3306 -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/steer_test?useSSL=false"/>
+            <!-- 显示sql语句 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!--
+                create：程序执行时创建标（如果表存在就先删除再创建）
+                update：使用已存在的表，没有就创建
+                none：啥也不做
+             -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+
+        </properties>
+
+    </persistence-unit>
+</persistence>
